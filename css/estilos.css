@@ -1,0 +1,193 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-snap-type: y mandatory;
+}
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, #dfe9f3 0%, var(--blanco 100%))
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,1);
+-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,1);
+box-shadow: 0px 5px 15px 0px rgba(0,0,0,1);
+background-color: var(--blanco);
+padding: 2rem;
+border-radius: 1rem;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}  
+
+h3 {
+    font-size: 1.8rem;
+}
+h1,h2,h3 {
+    text-align: center;
+ }
+
+.titulo {
+    font-size: 2rem;
+}
+
+.contenedor{
+   max-width: 120rem;
+    margin: 0 auto ;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+    
+}
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.navegacion-principal {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1140px) {
+    
+    }
+    
+
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    
+}
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.hero {
+    background-image: url(../img/9-secretos-clave-que-ningun-plomero-le-contara-1003-mainImage-0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: rgb(0 0 0 / 50% );
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+    color: var(--blanco);
+}
+
+.ubicacion {
+    display: flex;
+}
+
+
+/** servicios **/
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5rem;
+    }
+}
+
+
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+
+    .servicio h3 {
+        color: var(--secundario);
+        font-weight: normal;
+        display: flex;
+        flex-direction: row;
+
+        
+}
+
+
+
+.servicio a {
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+.servicio p {
+   line-height: 3;
+   text-align: start;
+}
+
+.derechos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wpp a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
